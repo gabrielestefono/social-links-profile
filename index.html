@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Links Profile - Gabriel Estéfono</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* -- COLORS -- */
+        /* Gray */
+        --gray-700: #333333;
+        --gray-800: #1f1f1f;
+        --gray-900: #141414;
+
+        /* Green */
+        --green: #c4f82a;
+
+        /* White */
+        --white: #ffffff;
+
+        /* --- TIPOGRAPHY --- */
+        /* Font-Family */
+        --font-inter: "Inter", sans-serif;
+
+        /* Font-Size */
+        --font-14: 0.875rem;
+        --font-24: 1.5rem;
+
+        /* Line-Height */
+        --line-150: 150%;
+
+        /* Font-Weight */
+        --font-regular: 400;
+        --font-bold: 700;
+
+        /* Fonts */
+        --preset-01: var(--font-bold) var(--font-24)/var(--line-150)
+          var(--font-inter);
+        --preset-02: var(--font-regular) var(--font-14)/var(--line-150)
+          var(--font-inter);
+        --preset-02-bold: var(--font-bold) var(--font-14)/var(--line-150)
+          var(--font-inter);
+
+        /* --- SPACING --- */
+        --spacing-50: 0.25rem;
+        --spacing-100: 0.5rem;
+        --spacing-150: 0.75rem;
+        --spacing-200: 1rem;
+        --spacing-300: 1.5rem;
+        --spacing-500: 2.5rem;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: var(--gray-900);
+        color: var(--white);
+        font: var(--preset-02);
+      }
+
+      .app {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
