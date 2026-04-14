@@ -1,6 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+  href: string;
+}>();
+</script>
 <template>
-  <a class="btn" href="#">
+  <a class="btn" :href="href">
     <slot></slot>
   </a>
 </template>
@@ -20,15 +24,23 @@
   justify-content: center;
 }
 
-.btn:hover,
 .btn:focus,
-.btn:active,
-.btn:focus-visible {
+.btn:active {
   background-color: var(--green);
   color: var(--gray-700);
 
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--green);
+  color: var(--gray-700);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 3px;
 }
 </style>

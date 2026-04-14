@@ -4,15 +4,15 @@ import ButtonComponent from "./components/ButtonComponent.vue";
 
 <template>
   <main>
-    <article class="container">
+    <section class="container">
       <header class="header">
         <figure>
-          <img src="/public/profile-pic.png" alt="Jessica Randall" class="image" />
+          <img src="/profile-pic.png" alt="Jessica Randall" class="image" />
           <figcaption class="sr-only">Thumbnail of social media profile</figcaption>
         </figure>
         <div>
           <h1>Jessica Randall</h1>
-          <address>London, United Kingdom</address>
+          <p class="location">London, United Kingdom</p>
         </div>
       </header>
       <section>
@@ -22,31 +22,31 @@ import ButtonComponent from "./components/ButtonComponent.vue";
         <nav>
           <ul>
             <li>
-              <ButtonComponent>GitHub</ButtonComponent>
+              <ButtonComponent href="https://github.com">GitHub</ButtonComponent>
             </li>
             <li>
-              <ButtonComponent>FrontendMentor</ButtonComponent>
+              <ButtonComponent href="https://www.frontendmentor.io">FrontendMentor</ButtonComponent>
             </li>
             <li>
-              <ButtonComponent>LinkedIn</ButtonComponent>
+              <ButtonComponent href="https://www.linkedin.com">LinkedIn</ButtonComponent>
             </li>
             <li>
-              <ButtonComponent>Twitter</ButtonComponent>
+              <ButtonComponent href="https://x.com">Twitter</ButtonComponent>
             </li>
             <li>
-              <ButtonComponent>Instagram</ButtonComponent>
+              <ButtonComponent href="https://www.instagram.com">Instagram</ButtonComponent>
             </li>
           </ul>
         </nav>
       </footer>
-    </article>
+    </section>
   </main>
 </template>
 
 <style scoped>
 main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +73,7 @@ main {
 
 .header > figure {
   height: 5.5rem;
+  width: 5.5rem;
 }
 
 .image {
@@ -98,11 +99,13 @@ h1 {
   font: var(--preset-01);
   color: var(--white);
   margin-bottom: 4px;
+  text-align: center;
 }
 
-address {
+.location {
   font: var(--preset-02-bold);
   color: var(--green);
+  text-align: center;
 }
 
 section {
