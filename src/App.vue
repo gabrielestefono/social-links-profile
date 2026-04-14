@@ -74,6 +74,10 @@ main {
   gap: var(--spacing-300);
 }
 
+.header > figure {
+  height: 5.5rem;
+}
+
 .image {
   width: 5.5rem;
   height: 5.5rem;
@@ -96,6 +100,7 @@ main {
 h1 {
   font: var(--preset-01);
   color: var(--white);
+  margin-bottom: 4px;
 }
 
 address {
@@ -108,10 +113,11 @@ section {
   text-align: center;
 }
 
-footer {
+footer > nav > ul {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-200);
+  list-style: none;
 }
 
 @media screen and (min-width: 600px) {
