@@ -19,11 +19,28 @@ import ButtonComponent from "./components/ButtonComponent.vue";
         <p>"Front-end developer and avid reader."</p>
       </section>
       <footer>
-        <ButtonComponent>GitHub</ButtonComponent>
-        <ButtonComponent>FrontendMentor</ButtonComponent>
-        <ButtonComponent>LinkedIn</ButtonComponent>
-        <ButtonComponent>Twitter</ButtonComponent>
-        <ButtonComponent>Instagram</ButtonComponent>
+        <nav>
+          <ul>
+            <li>
+              <ButtonComponent>GitHub</ButtonComponent>
+            </li>
+            <li>
+              <ButtonComponent>FrontendMentor</ButtonComponent>
+            </li>
+            <li>
+              <ButtonComponent>GitHub</ButtonComponent>
+            </li>
+            <li>
+              <ButtonComponent>LinkedIn</ButtonComponent>
+            </li>
+            <li>
+              <ButtonComponent>Twitter</ButtonComponent>
+            </li>
+            <li>
+              <ButtonComponent>Instagram</ButtonComponent>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </article>
   </main>
