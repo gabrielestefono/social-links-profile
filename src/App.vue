@@ -28,9 +28,6 @@ import ButtonComponent from "./components/ButtonComponent.vue";
               <ButtonComponent>FrontendMentor</ButtonComponent>
             </li>
             <li>
-              <ButtonComponent>GitHub</ButtonComponent>
-            </li>
-            <li>
               <ButtonComponent>LinkedIn</ButtonComponent>
             </li>
             <li>
